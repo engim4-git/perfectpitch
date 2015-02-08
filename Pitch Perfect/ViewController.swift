@@ -19,7 +19,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var recordInProgress: UILabel!
 
+    @IBAction func recordButton(sender: UIButton) {
+        recordInProgress.hidden = false
+        //TODO: Record the user's voice
+        println("in recordAudio")
+    }
 
 }
 
